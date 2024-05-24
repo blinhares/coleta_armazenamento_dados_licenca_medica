@@ -88,7 +88,7 @@ Pode-se optar por executar os comandos através do conector Python ou através d
 ## Clonando Repositório
 
 ```bash
-git clone 
+git clone https://github.com/blinhares/coleta_armazenamento_dados_licenca_medica.git
 ```
 
 ## Dependências
