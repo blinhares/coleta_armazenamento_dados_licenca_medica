@@ -1,4 +1,4 @@
-# Projeto de Coleta e Armazenamento de Dados
+# Projeto de Coleta e Armazenamento de Dados em DB MySQL
 
 Este projeto trata-se de um estudo de caso em que, como arquiteto de Big Data, devemos utilizar o banco de Dados `MySQL` para armazenar e gerencias os dados de uma pesquisa sobre licenças medicas.
 
@@ -48,7 +48,7 @@ No próprio [MySQL Workbench](https://www.mysql.com/products/workbench/) é poss
 
 Criamos um banco de dados e um usuário com as seguintes informações:
 
-```json
+```python
 'user':'db_med',
 'password': 'db_med',
 'host': '127.0.0.1', #padrao
