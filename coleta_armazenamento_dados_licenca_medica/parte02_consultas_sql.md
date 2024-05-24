@@ -6,7 +6,7 @@ SELECT cod_colaborador, data_nascimento
 from tb_colaborador;
 ```
 
-# Q1 - Qual é a idade média dos colaboradores do sexo masculino que estão solteiros?
+# Qual é a idade média dos colaboradores do sexo masculino que estão solteiros?
 Grupo de escolhas da pergunta
 
 ```SQL
@@ -19,7 +19,7 @@ where sexo_colaborador = 'Masculino' and estado_civil = 'Solteiro(a)';
 __RESPOSTA -> 44,29__
 
 
-# Q2 - Qual é o motivo de licença que foi mais frequentemente solicitado por mulheres com mais de 35 anos?
+# Qual é o motivo de licença que foi mais frequentemente solicitado por mulheres com mais de 35 anos?
 
 ```SQL
 SELECT motivo_licenca,COUNT(1) FROM tb_idade
@@ -33,7 +33,7 @@ ORDER BY COUNT(1) DESC;
 
 __ RESPOSTA -> Comum__
 
-# Q3 - Dentre a lista abaixo, escolha o médico que atendeu o maior número de colaboradores do estado de Minas Gerais.
+# Dentre a lista abaixo, escolha o médico que atendeu o maior número de colaboradores do estado de Minas Gerais.
 
 ```SQL
 SELECT nome_medico, COUNT(1) FROM tb_processamento_licenca
@@ -47,7 +47,7 @@ ORDER BY COUNT(1) DESC ;
 
 __RESPOSTA -> Dr. Pedro__
 
-# Q4 - Qual estado tem o maior número de pessoas com ensino Fundamental que têm a leitura como hobbie?
+# Qual estado tem o maior número de pessoas com ensino Fundamental que têm a leitura como hobbie?
 
 ```SQL
 SELECT estado, COUNT(1) FROM tb_processamento_licenca
@@ -63,7 +63,7 @@ ORDER BY COUNT(1) DESC
 
 __RESPOSTA -> Santa Catarina__
 
-# Q5 - Qual é o número de pessoas com ensino superior que são naturais ou pertencem ao estado de Pernambuco?
+# Qual é o número de pessoas com ensino superior que são naturais ou pertencem ao estado de Pernambuco?
 
 ```SQL
 SELECT COUNT(1) FROM tb_processamento_licenca
@@ -79,7 +79,7 @@ ORDER BY COUNT(1) DESC
 
 __RESPOSTA -> 10__
 
-# Q6 - Calcule a média de filhos entre todas as pessoas atendidas pelo Dr. Lessa e assinale a alternativa CORRETA.
+# Calcule a média de filhos entre todas as pessoas atendidas pelo Dr. Lessa e assinale a alternativa CORRETA.
 
 ```SQL
 SELECT sexo_colaborador,AVG(qtd_filhos)  FROM tb_processamento_licenca
@@ -94,7 +94,7 @@ GROUP BY sexo_colaborador;
 
 __RESPOSTA -> A média de filhos entre os colaboradores do sexo masculino é superior à média das colaboradoras do sexo feminino.__
 
-# Q7 - Qual colaborador possui o maior salário na base de dados?
+# Qual colaborador possui o maior salário na base de dados?
 
 ```SQL
 SELECT nome_colaborador,salario  FROM tb_processamento_licenca
@@ -108,7 +108,7 @@ ORDER BY salario DESC;
 
 __RESPOSTA -> Nathan Barros.__
 
-# Q8 - Qual estado apresenta a maior média salarial entre os colaboradores?
+# Qual estado apresenta a maior média salarial entre os colaboradores?
 
 ```SQL
 SELECT estado,AVG(salario)  FROM tb_processamento_licenca
@@ -123,7 +123,7 @@ ORDER BY AVG(salario) DESC;
 
 __RESPOSTA -> Minas Gerais__
 
-# Q9 - Qual licença teve a menor média de duração entre os colaboradores?
+# Qual licença teve a menor média de duração entre os colaboradores?
 
 ```SQL
 SELECT motivo_licenca,AVG(duracao_licenca)  FROM tb_processamento_licenca
@@ -140,7 +140,7 @@ ORDER BY AVG(duracao_licenca);
 __RESPOSTA -> Acidente de TRABALHO__
 
 
-# Q10 -Qual especialidade realizou o menor número de atendimentos?
+# Qual especialidade realizou o menor número de atendimentos?
 
 ```SQL
 SELECT especialidade, COUNT(1)  FROM tb_processamento_licenca
